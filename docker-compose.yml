@@ -101,6 +101,8 @@ services:
       KAFKA_BROKERCONNECT: kafka:29092
   infra:
     image: infra
+    networks: 
+      - broker-kafka
     depends_on:
       - kafdrop
     build: '.'
