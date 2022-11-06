@@ -32,22 +32,25 @@ services:
       MYSQL_PASSWORD: nE5kMc7JCGNqwDQN
       MYSQL_ROOT_PASSWORD: nE5kMc7JCGNqwDQN
 ######################## SCHEDULE-API #################### 
-  # schedule_api:
-  #   depends_on:
-  #     - mongodb
-  #   build: '.'
-  #   restart: unless-stopped
-  #   env_file: ./.env
-  #   ports:
-  #     - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
-  #   environment:
-  #     - DB_HOST=mongodb
-  #     - DB_USER=$MONGODB_USER
-  #     - DB_PASSWORD=$MONGODB_PASSWORD
-  #     - DB_NAME=$MONGODB_DATABASE
-  #     - DB_PORT=$MONGODB_DOCKER_PORT
-  #   stdin_open: true
-  #   tty: true
+  schedule_api:
+    image: schedule_api
+    depends_on:
+      - mongodb
+    build: 
+      context: ../schedule-api/.
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
+    environment:
+      - DB_HOST=mongodb
+      - DB_USER=$MONGODB_USER
+      - DB_PASSWORD=$MONGODB_PASSWORD
+      - DB_NAME=$MONGODB_DATABASE
+      - DB_PORT=$MONGODB_DOCKER_PORT
+    stdin_open: true
+    tty: true
 ######################## MONGO #################### 
   mongodb:
     image: mongo
@@ -96,6 +99,15 @@ services:
       - 19000:9000
     environment:
       KAFKA_BROKERCONNECT: kafka:29092
+  infra:
+    image: infra
+    depends_on:
+      - kafdrop
+    build: '.'
+    restart: unless-stopped
+    env_file: ./.env
+    stdin_open: true
+    tty: true
 volumes:
   db:
 networks: 
