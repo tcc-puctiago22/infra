@@ -34,8 +34,11 @@ services:
 ######################## SCHEDULE-API #################### 
   schedule_api:
     image: schedule_api
+    networks: 
+      - broker-kafka
     depends_on:
       - mongodb
+      - infra
     build: 
       context: ../schedule-api/.
       dockerfile: Dockerfile
@@ -49,6 +52,9 @@ services:
       - DB_PASSWORD=$MONGODB_PASSWORD
       - DB_NAME=$MONGODB_DATABASE
       - DB_PORT=$MONGODB_DOCKER_PORT
+      - KAFKA_CLIENTID=kafka
+      - KAFKA_BROKERCONNECT=kafka:29092
+      - KAFKA_TOPIC_SCHEDULE=post-schedule
     stdin_open: true
     tty: true
 ######################## MONGO #################### 
