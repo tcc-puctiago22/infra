@@ -1,0 +1,620 @@
+{
+	"info": {
+		"_postman_id": "05ba3b7a-df96-43c8-ad82-172aae393962",
+		"name": "puc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6942276"
+	},
+	"item": [
+		{
+			"name": "occupational",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Fr6r4kxeD224lEctmBj7N6T7ujj1x04O8FnAHHjr"
+					},
+					{
+						"key": "Transaction-Id",
+						"value": "e7b27a2d-fce7-468c-94c4-864dad8c614e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkMTk3MzRjZS0yMmVhLTQ0MTYtYjM3ZC0xN2QyODkwMzAwYzEiLCJ3ZWJzaXRlIjoicGljcGF5LmNvbS5iciIsImFkZHJlc3MiOnsiZm9ybWF0dGVkIjoiQXYgTWFudWVsIEJhbmRlaXJhLCAyOTEgLSBTUCJ9LCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV9SeUh6eEdORFYiLCJjb2duaXRvOnVzZXJuYW1lIjoiMjI4OTY0MzEwMDAxMTAiLCJnaXZlbl9uYW1lIjoiUGljUGF5IiwiYXVkIjoiNjhkaGY4NTE1dXA2NmY4NWs3bnBxdTJwcjgiLCJldmVudF9pZCI6ImY2ZmE0NmU2LWVkNDctNDgyYi05N2ZiLTNjMjljZGYyM2EyYyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAzMjg3NTg5LCJuYW1lIjoiUGljUGF5IiwiY3VzdG9tOmRvY3VtZW50IjoiMjI4OTY0MzEwMDAxMTAiLCJleHAiOjE2NDA4NzYxMDgsImlhdCI6MTY0MDg3NjEwOCwiZW1haWwiOiJwaWNwYXlAcGljcGF5LmNvbSIsImp0aSI6IjBjZGZjMGZhLTUxNzAtNDFjNy05NDgxLTM5OGRjNzMxYmQxMCJ9.hvsqdwyOMwSjyyoPGxrkAohg9j4Z1y_pBKRdlbvkiL4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/providers/occupational?type=MEDICO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"providers",
+						"occupational"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "MEDICO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "provider",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Fr6r4kxeD224lEctmBj7N6T7ujj1x04O8FnAHHjr"
+					},
+					{
+						"key": "Transaction-Id",
+						"value": "e7b27a2d-fce7-468c-94c4-864dad8c614e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkMTk3MzRjZS0yMmVhLTQ0MTYtYjM3ZC0xN2QyODkwMzAwYzEiLCJ3ZWJzaXRlIjoicGljcGF5LmNvbS5iciIsImFkZHJlc3MiOnsiZm9ybWF0dGVkIjoiQXYgTWFudWVsIEJhbmRlaXJhLCAyOTEgLSBTUCJ9LCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV9SeUh6eEdORFYiLCJjb2duaXRvOnVzZXJuYW1lIjoiMjI4OTY0MzEwMDAxMTAiLCJnaXZlbl9uYW1lIjoiUGljUGF5IiwiYXVkIjoiNjhkaGY4NTE1dXA2NmY4NWs3bnBxdTJwcjgiLCJldmVudF9pZCI6ImY2ZmE0NmU2LWVkNDctNDgyYi05N2ZiLTNjMjljZGYyM2EyYyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAzMjg3NTg5LCJuYW1lIjoiUGljUGF5IiwiY3VzdG9tOmRvY3VtZW50IjoiMjI4OTY0MzEwMDAxMTAiLCJleHAiOjE2NDA4NzYxMDgsImlhdCI6MTY0MDg3NjEwOCwiZW1haWwiOiJwaWNwYXlAcGljcGF5LmNvbSIsImp0aSI6IjBjZGZjMGZhLTUxNzAtNDFjNy05NDgxLTM5OGRjNzMxYmQxMCJ9.hvsqdwyOMwSjyyoPGxrkAohg9j4Z1y_pBKRdlbvkiL4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/providers?occupationDescription=Cardiologia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"providers"
+					],
+					"query": [
+						{
+							"key": "occupationDescription",
+							"value": "Cardiologia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "provider/providers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Fr6r4kxeD224lEctmBj7N6T7ujj1x04O8FnAHHjr"
+					},
+					{
+						"key": "Transaction-Id",
+						"value": "e7b27a2d-fce7-468c-94c4-864dad8c614e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkMTk3MzRjZS0yMmVhLTQ0MTYtYjM3ZC0xN2QyODkwMzAwYzEiLCJ3ZWJzaXRlIjoicGljcGF5LmNvbS5iciIsImFkZHJlc3MiOnsiZm9ybWF0dGVkIjoiQXYgTWFudWVsIEJhbmRlaXJhLCAyOTEgLSBTUCJ9LCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV9SeUh6eEdORFYiLCJjb2duaXRvOnVzZXJuYW1lIjoiMjI4OTY0MzEwMDAxMTAiLCJnaXZlbl9uYW1lIjoiUGljUGF5IiwiYXVkIjoiNjhkaGY4NTE1dXA2NmY4NWs3bnBxdTJwcjgiLCJldmVudF9pZCI6ImY2ZmE0NmU2LWVkNDctNDgyYi05N2ZiLTNjMjljZGYyM2EyYyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAzMjg3NTg5LCJuYW1lIjoiUGljUGF5IiwiY3VzdG9tOmRvY3VtZW50IjoiMjI4OTY0MzEwMDAxMTAiLCJleHAiOjE2NDA4NzYxMDgsImlhdCI6MTY0MDg3NjEwOCwiZW1haWwiOiJwaWNwYXlAcGljcGF5LmNvbSIsImp0aSI6IjBjZGZjMGZhLTUxNzAtNDFjNy05NDgxLTM5OGRjNzMxYmQxMCJ9.hvsqdwyOMwSjyyoPGxrkAohg9j4Z1y_pBKRdlbvkiL4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"listProviders\": [\n       {\n           \"uuid\": \"0d0a368b-6197-494d-9f93-f24db1ae432e\"\n       }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/partner/07d6334a-0168-4f33-8ba4-9d80892680b1/providers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"partner",
+						"07d6334a-0168-4f33-8ba4-9d80892680b1",
+						"providers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partner",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Fr6r4kxeD224lEctmBj7N6T7ujj1x04O8FnAHHjr"
+					},
+					{
+						"key": "Transaction-Id",
+						"value": "e7b27a2d-fce7-468c-94c4-864dad8c614e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkMTk3MzRjZS0yMmVhLTQ0MTYtYjM3ZC0xN2QyODkwMzAwYzEiLCJ3ZWJzaXRlIjoicGljcGF5LmNvbS5iciIsImFkZHJlc3MiOnsiZm9ybWF0dGVkIjoiQXYgTWFudWVsIEJhbmRlaXJhLCAyOTEgLSBTUCJ9LCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV9SeUh6eEdORFYiLCJjb2duaXRvOnVzZXJuYW1lIjoiMjI4OTY0MzEwMDAxMTAiLCJnaXZlbl9uYW1lIjoiUGljUGF5IiwiYXVkIjoiNjhkaGY4NTE1dXA2NmY4NWs3bnBxdTJwcjgiLCJldmVudF9pZCI6ImY2ZmE0NmU2LWVkNDctNDgyYi05N2ZiLTNjMjljZGYyM2EyYyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAzMjg3NTg5LCJuYW1lIjoiUGljUGF5IiwiY3VzdG9tOmRvY3VtZW50IjoiMjI4OTY0MzEwMDAxMTAiLCJleHAiOjE2NDA4NzYxMDgsImlhdCI6MTY0MDg3NjEwOCwiZW1haWwiOiJwaWNwYXlAcGljcGF5LmNvbSIsImp0aSI6IjBjZGZjMGZhLTUxNzAtNDFjNy05NDgxLTM5OGRjNzMxYmQxMCJ9.hvsqdwyOMwSjyyoPGxrkAohg9j4Z1y_pBKRdlbvkiL4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fantasyName\": \"João silva LTDA\",\n    \"customer\": {\n        \"document\": \"74429759000120\",\n        \"givenName\": \"João da Silva\",\n        \"emails\": [\n            {\n                \"email\": \"joaosilva03@gmail.com\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"phones\": [\n            {\n                \"ddd\": 21,\n                \"phoneNumber\": 924242524,\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"addresses\": [\n            {\n                \"postcode\": \"05317-020\",\n                \"streetName\": \"Av. Manuel Bandeira\",\n                \"streetNumber\": 291,\n                \"complement\": \"Bloco A\",\n                \"district\": \"Vila Leopoldina\",\n                \"uf\": \"SP\",\n                \"city\": \"São Paulo\"\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/customers/v1/partners?city=Cotia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"customers",
+						"v1",
+						"partners"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Cotia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "provider",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Fr6r4kxeD224lEctmBj7N6T7ujj1x04O8FnAHHjr"
+					},
+					{
+						"key": "Transaction-Id",
+						"value": "e7b27a2d-fce7-468c-94c4-864dad8c614e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkMTk3MzRjZS0yMmVhLTQ0MTYtYjM3ZC0xN2QyODkwMzAwYzEiLCJ3ZWJzaXRlIjoicGljcGF5LmNvbS5iciIsImFkZHJlc3MiOnsiZm9ybWF0dGVkIjoiQXYgTWFudWVsIEJhbmRlaXJhLCAyOTEgLSBTUCJ9LCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV9SeUh6eEdORFYiLCJjb2duaXRvOnVzZXJuYW1lIjoiMjI4OTY0MzEwMDAxMTAiLCJnaXZlbl9uYW1lIjoiUGljUGF5IiwiYXVkIjoiNjhkaGY4NTE1dXA2NmY4NWs3bnBxdTJwcjgiLCJldmVudF9pZCI6ImY2ZmE0NmU2LWVkNDctNDgyYi05N2ZiLTNjMjljZGYyM2EyYyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAzMjg3NTg5LCJuYW1lIjoiUGljUGF5IiwiY3VzdG9tOmRvY3VtZW50IjoiMjI4OTY0MzEwMDAxMTAiLCJleHAiOjE2NDA4NzYxMDgsImlhdCI6MTY0MDg3NjEwOCwiZW1haWwiOiJwaWNwYXlAcGljcGF5LmNvbSIsImp0aSI6IjBjZGZjMGZhLTUxNzAtNDFjNy05NDgxLTM5OGRjNzMxYmQxMCJ9.hvsqdwyOMwSjyyoPGxrkAohg9j4Z1y_pBKRdlbvkiL4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uuidOccupational\": \"2f04150e-c6b3-4ede-900f-f803a2039456\",\n    \"customer\": {\n        \"document\": \"23962877029\",\n        \"givenName\": \"João da Silva\",\n        \"emails\": [\n            {\n                \"email\": \"joaosilva03@gmail.com\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"phones\": [\n            {\n                \"ddd\": 21,\n                \"phoneNumber\": 924242524,\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"addresses\": [\n            {\n                \"postcode\": \"05317-020\",\n                \"streetName\": \"Av. Manuel Bandeira\",\n                \"streetNumber\": 291,\n                \"complement\": \"Bloco A\",\n                \"district\": \"Vila Leopoldina\",\n                \"uf\": \"SP\",\n                \"city\": \"São Paulo\"\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/providers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"providers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associetes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8085"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8085/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountUsername\": \"10788031708\",\n     \"type\": \"OWNER\",\n    \"birthDate\": \"2022-11-01\",\n    \"customer\": {\n        \"document\": \"10788031708\",\n        \"givenName\": \"tiago brito dos Santos\",\n        \"emails\": [\n            {\n                \"email\": \"tiagobrito0311@gmail.com\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"phones\": [\n            {\n                \"ddd\": 21,\n                \"phoneNumber\": \"994149494\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"addresses\": [\n            {\n                \"postcode\": \"2270805\",\n                \"streetName\": \"Rua joao bruno lobo\",\n                \"streetNumber\": \"21\",\n                \"complement\": \"casa 2\",\n                \"district\": \"jacaper\",\n                \"uf\": \"RJ\",\n                \"city\": \"rio de janeiro\"\n            }\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/customers/v1/associetes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"customers",
+						"v1",
+						"associetes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "provider",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Fr6r4kxeD224lEctmBj7N6T7ujj1x04O8FnAHHjr"
+					},
+					{
+						"key": "Transaction-Id",
+						"value": "e7b27a2d-fce7-468c-94c4-864dad8c614e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkMTk3MzRjZS0yMmVhLTQ0MTYtYjM3ZC0xN2QyODkwMzAwYzEiLCJ3ZWJzaXRlIjoicGljcGF5LmNvbS5iciIsImFkZHJlc3MiOnsiZm9ybWF0dGVkIjoiQXYgTWFudWVsIEJhbmRlaXJhLCAyOTEgLSBTUCJ9LCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV9SeUh6eEdORFYiLCJjb2duaXRvOnVzZXJuYW1lIjoiMjI4OTY0MzEwMDAxMTAiLCJnaXZlbl9uYW1lIjoiUGljUGF5IiwiYXVkIjoiNjhkaGY4NTE1dXA2NmY4NWs3bnBxdTJwcjgiLCJldmVudF9pZCI6ImY2ZmE0NmU2LWVkNDctNDgyYi05N2ZiLTNjMjljZGYyM2EyYyIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAzMjg3NTg5LCJuYW1lIjoiUGljUGF5IiwiY3VzdG9tOmRvY3VtZW50IjoiMjI4OTY0MzEwMDAxMTAiLCJleHAiOjE2NDA4NzYxMDgsImlhdCI6MTY0MDg3NjEwOCwiZW1haWwiOiJwaWNwYXlAcGljcGF5LmNvbSIsImp0aSI6IjBjZGZjMGZhLTUxNzAtNDFjNy05NDgxLTM5OGRjNzMxYmQxMCJ9.hvsqdwyOMwSjyyoPGxrkAohg9j4Z1y_pBKRdlbvkiL4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/providers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"providers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"10788031708\",\n  \"password\" : \"Sisa#123456\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://1frgab2hd0.execute-api.us-east-1.amazonaws.com/staging/auth/token",
+					"protocol": "https",
+					"host": [
+						"1frgab2hd0",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"staging",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associetes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/associetes/370efbec-72e2-4490-ac84-9c3bae67bed5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"associetes",
+						"370efbec-72e2-4490-ac84-9c3bae67bed5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associetes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8085"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8085/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountUsername\": \"10788031708\",\n    \"birthDate\": \"2022-11-01\",\n    \"customer\": {\n        \"document\": \"10788031708\",\n        \"givenName\": \"tiago brito dos Santos\",\n        \"emails\": [\n            {\n                \"email\": \"tiagobrito0311@gmail.com\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"phones\": [\n            {\n                \"ddd\": 21,\n                \"phoneNumber\": \"994149494\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"addresses\": [\n            {\n                \"postcode\": \"2270805\",\n                \"streetName\": \"Rua joao bruno lobo\",\n                \"streetNumber\": \"21\",\n                \"complement\": \"casa 2\",\n                \"district\": \"jacaper\",\n                \"uf\": \"RJ\",\n                \"city\": \"rio de janeiro\"\n            }\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/associetes?accountUuid=10788031708",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"associetes"
+					],
+					"query": [
+						{
+							"key": "accountUuid",
+							"value": "10788031708"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associetes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8085"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8085/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountUuid\": \"10788031708\",\n    \"birthDate\": \"2015-11-08\",\n    \"customer\": {\n        \"document\": \"10788031708\",\n        \"givenName\": \"tiago brito dos Santos\",\n        \"emails\": [\n            {\n                \"email\": \"tiagobrito0311@gmail.com\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"phones\": [\n            {\n                \"ddd\": \"21\",\n                \"phoneNumber\": \"994149494\",\n                \"type\": \"PESSOAL\"\n            }\n        ],\n        \"addresses\": [\n            {\n                \"postcode\": \"22708805\",\n                \"streetName\": \"Rua joao bruno lobo\",\n                \"streetNumber\": \"11\",\n                \"complement\": \"casa 2\",\n                \"district\": \"jacaper\",\n                \"uf\": \"Rj\",\n                \"city\": \"rio de janeiro\"\n            }\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/v1/associetes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"v1",
+						"associetes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schedule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8085/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"associeateUuid\": \"64334642-302b-403c-93d4-ded47b73488b\",\n    \"providerUuid\": \"fc63cdcb-229a-476b-bc05-20a9e3062028\",\n    \"partnerUuid\": \"5fc5c63d-9ffb-4544-9eb8-bb567cc304bb\",\n    \"scheduledDate\": \"2022-11-14\",\n    \"scheduledTime\": \"10:00\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6868/schedule/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"schedule",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
