@@ -31,6 +31,18 @@ services:
       MYSQL_USER: customersapi
       MYSQL_PASSWORD: nE5kMc7JCGNqwDQN
       MYSQL_ROOT_PASSWORD: nE5kMc7JCGNqwDQN
+######################## FRONT #################### 
+  front:
+    image: front
+    build: 
+      context: ../good-heath-front/.
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - 8085:8080
+    stdin_open: true
+    tty: true
 ######################## SCHEDULE-API #################### 
   schedule_api:
     image: schedule_api
