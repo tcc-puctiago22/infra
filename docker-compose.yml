@@ -1,8 +1,8 @@
 version: '3'
 services:
   ######################## CUSTOMER-API ####################
-  customers_api:
-    container_name: customers_api
+  customers-api:
+    container_name: customers-api
     image: customers-api:1
     build:
       context: ../customers-api/.
@@ -45,12 +45,12 @@ services:
     restart: unless-stopped
     env_file: ./.env
     ports:
-      - 8085:8080
+      - 8085:8085
     stdin_open: true
     tty: true
 ######################## SCHEDULE-API #################### 
-  schedule_api:
-    image: schedule_api
+  schedule-api:
+    image: schedule-api
     networks: 
       - common-net
       - broker-kafka
@@ -73,12 +73,12 @@ services:
       - KAFKA_CLIENTID=kafka
       - KAFKA_BROKERCONNECT=kafka:29092
       - KAFKA_TOPIC_SCHEDULE=post-schedule
-      - URL_CUSTOMER=customers_api
+      - URL_CUSTOMER=customers-api
     stdin_open: true
     tty: true
     links:
       - mongodb
-      - customers_api
+      - customers-api
 ######################## MONGO #################### 
   mongodb:
     networks:
