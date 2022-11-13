@@ -2,6 +2,7 @@ version: '3'
 services:
   ######################## CUSTOMER-API ####################
   customers_api:
+    container_name: customers_api
     image: customers-api:1
     build:
       context: ../customers-api/.
@@ -15,7 +16,9 @@ services:
       - mysql_db
     command: sh -c './wait-for mysql_db:3306 -- npm start'
     environment:
-      SPRING_DATASOURCE: mysql_db
+      - SPRING_DATASOURCE=mysql_db
+    networks:
+      - common-net
 ######################## MYSQL #################### 
   mysql_db:
     image: "mysql:8.0"
@@ -31,6 +34,8 @@ services:
       MYSQL_USER: customersapi
       MYSQL_PASSWORD: nE5kMc7JCGNqwDQN
       MYSQL_ROOT_PASSWORD: nE5kMc7JCGNqwDQN
+    networks: 
+      - common-net
 ######################## FRONT #################### 
   front:
     image: front
@@ -47,6 +52,7 @@ services:
   schedule_api:
     image: schedule_api
     networks: 
+      - common-net
       - broker-kafka
     depends_on:
       - mongodb
@@ -67,10 +73,17 @@ services:
       - KAFKA_CLIENTID=kafka
       - KAFKA_BROKERCONNECT=kafka:29092
       - KAFKA_TOPIC_SCHEDULE=post-schedule
+      - URL_CUSTOMER=customers_api
     stdin_open: true
     tty: true
+    links:
+      - mongodb
+      - customers_api
 ######################## MONGO #################### 
   mongodb:
+    networks:
+      - common-net
+    container_name: mongodb
     image: mongo
     restart: always
     env_file: .env
@@ -81,8 +94,6 @@ services:
       - $MONGODB_LOCAL_PORT:$MONGODB_DOCKER_PORT
     volumes:
       - db:/data/db
-    networks:
-      - mongo
   ######################## KAFKA ####################
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
@@ -131,7 +142,6 @@ services:
 volumes:
   db:
 networks: 
-  mongo:
-    driver: bridge
   broker-kafka:
     driver: bridge
+  common-net: {}

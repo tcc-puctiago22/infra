@@ -55,13 +55,15 @@ const init = async () => {
 
         if (list.length == 0) {
             await createTopics();
+          console.log("***** exit *****")
+          process.exit(1)
         }
 
-        process.exit(0)
 
     } catch (error) {
+        console.log("***** exit *****")
         console.error(error);
-        process.exit(0)
+        process.exit(1)
 
     }
 }
